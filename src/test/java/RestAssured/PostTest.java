@@ -27,7 +27,8 @@ public class PostTest {
         car.put("action", "CREATE");
         given().contentType("application/json").body(car).when().post().then().log().all().statusCode(200);
 
-        ArrayList<String> basePackage = new ArrayList<String>();
+     //   ArrayList<String> basePackage = new ArrayList<String>();
+        ArrayList<String> basePackage = new ArrayList();
         basePackage.add("telephoneNo");
         basePackage.add("productId");
         basePackage.add("type");
